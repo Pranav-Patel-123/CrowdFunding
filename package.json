@@ -9,15 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@thirdweb-dev/react": "^3",
+    "@thirdweb-dev/sdk": "^3",
+    "cloudinary": "^2.6.0",
+    "datauri": "^4.1.0",
+    "ethers": "^5",
+    "mongoose": "^8.13.2",
+    "multer": "^1.4.5-lts.2",
+    "next": "15.3.1",
+    "next-connect": "^1.0.0",
+    "pino-pretty": "^13.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "streamifier": "^0.1.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4"
   }
 }
