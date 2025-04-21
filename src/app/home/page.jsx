@@ -2,12 +2,12 @@
 
 import { useState, useEffect, useRef } from "react"
 import { useStateContext } from "@/context"
-import DisplayCampaigns from "../../..//components/DisplayCampaigns"
-import { Badge } from "../../..//components/ui/badge"
-import { Card, CardContent } from "../../..//components/ui/card"
-import { Checkbox } from "../../..//components/ui/checkbox"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../..//components/ui/select"
-import { Tabs, TabsList, TabsTrigger } from "../../..//components/ui/tabs"
+import DisplayCampaigns from "../../../components/DisplayCampaigns"
+import { Badge } from "../../../components/ui/badge"
+import { Card, CardContent } from "../../../components/ui/card"
+import { Checkbox } from "../../../components/ui/checkbox"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../../components/ui/select"
+import { Tabs, TabsList, TabsTrigger } from "../../../components/ui/tabs"
 import { BarChart3, Clock, Filter, Users } from "lucide-react"
 
 const CampaignsPage = () => {
