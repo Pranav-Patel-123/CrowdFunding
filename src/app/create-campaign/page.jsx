@@ -1,4 +1,3 @@
-// src/app/create-campaign/page.jsx
 'use client';
 
 import React, { useState, useEffect } from 'react';
@@ -9,7 +8,7 @@ import { useStateContext } from '../../../context';
 import { CustomButton, FormField, Loader } from '../../../components';
 import { checkIfImage } from '../../../utils';
 
-const CreateCampaign = () => {
+export default function CreateCampaign() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const [form, setForm] = useState({
@@ -27,6 +26,9 @@ const CreateCampaign = () => {
 
   const { createCampaign, getCategories } = useStateContext();
   const [categories, setCategories] = useState([]);
+
+  // Compute today's date in YYYY-MM-DD to set as the min for the date picker
+  const today = new Date().toISOString().split('T')[0];
 
   useEffect(() => {
     getCategories().then(setCategories);
@@ -118,6 +120,7 @@ const CreateCampaign = () => {
             value={form.deadline}
             handleChange={e => handleFormFieldChange('deadline', e)}
             required
+            min={today}
           />
         </div>
 
@@ -183,6 +186,4 @@ const CreateCampaign = () => {
       </form>
     </div>
   );
-};
-
-export default CreateCampaign;
+}
